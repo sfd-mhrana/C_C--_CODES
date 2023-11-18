@@ -1,0 +1,234 @@
+TASK 1:
+#include <iostream>
+using namespace std;
+
+class Rectangle
+{
+private:
+    double height;
+    double width;
+    double length;
+
+public:
+    Rectangle() {}
+
+    Rectangle(double h, double w, double l) : height(h), width(w), length(l) {}
+
+    void setDimensions(double h, double w, double l)
+    {
+        height = h;
+        width = w;
+        length = l;
+    }
+
+    double calculateArea()
+    {
+        return length * width;
+    }
+
+    double calculateVolume()
+    {
+        return height * width * length;
+    }
+};
+
+int main()
+{
+    Rectangle rect;
+    double h, w, l;
+
+    cout << "Enter height, width, and length: ";
+    cin >> h >> w >> l;
+
+    rect.setDimensions(h, w, l);
+
+    cout << "Area: " << rect.calculateArea() << endl;
+    cout << "Volume: " << rect.calculateVolume() << endl;
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+private:
+    double height = 0;
+    double width = 0;
+    double length = 0;
+
+public:
+    double calculateArea() {
+        return length * width;
+    }
+
+    double calculateVolume() {
+        return height * width * length;
+    }
+};
+
+int main() {
+    Rectangle rect;
+
+    cout << "Area: " << rect.calculateArea() << endl;
+    cout << "Volume: " << rect.calculateVolume() << endl;
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+class Rectangle
+{
+private:
+    double height;
+    double width;
+    double length;
+
+public:
+    Rectangle(double h, double w, double l) : height(h), width(w), length(l) {}
+
+    double calculateArea()
+    {
+        return length * width;
+    }
+
+    double calculateVolume()
+    {
+        return height * width * length;
+    }
+};
+
+int main()
+{
+    Rectangle rect(5, 6, 7);
+
+    cout << "Area: " << rect.calculateArea() << endl;
+    cout << "Volume: " << rect.calculateVolume() << endl;
+
+    return 0;
+}
+
+
+TASK 2 :
+
+#include <iostream>
+#include <string>
+using namespace std;
+class Employee
+{
+private:
+    string name;
+    double salary;
+
+public:
+    void setName(string empName)
+    {
+        name = empName;
+    }
+
+    void setSalary(double empSalary)
+    {
+        salary = empSalary;
+    }
+
+    string getName() const
+    {
+        return name;
+    }
+
+    double getYearlySalary() const
+    {
+        return salary * 12; // Assuming monthly salary
+    }
+};
+
+int main()
+{
+    Employee emp;
+    emp.setName("MD HOSSEN RANA");
+    emp.setSalary(5000); // Assuming monthly salary of 5000
+
+    cout << "Name: " << emp.getName() << endl;
+    cout << "Yearly Salary: " << emp.getYearlySalary() << endl;
+
+    return 0;
+}
+
+
+TASK 3:
+#include <iostream>
+#include <string>
+using namespace std;
+class Student {
+private:
+    string name;
+    int id;
+    string course;
+    string section;
+
+public:
+    Student() : name("MD HOSSEN RANA"), id(42230200818), course("Computer Science"), section("D") {}
+};
+
+int main() {
+    Student myself;
+
+    // Default values will be assigned
+    cout << "Name: " << myself.getName() << endl;
+    cout << "ID: " << myself.getID() << endl;
+    cout << "Course: " << myself.getCourse() << endl;
+    cout << "Section: " << myself.getSection() << endl;
+
+    return 0;
+}
+
+TASK 4:
+#include <iostream>
+#include <string>
+using namespace std;
+class Student
+{
+private:
+    string name;
+    int id;
+    string course;
+    string section;
+
+public:
+    Student(std::string studentName, int studentID, string studentCourse, string studentSection)
+        : name(studentName), id(studentID), course(studentCourse), section(studentSection) {}
+
+    string getName() const
+    {
+        return name;
+    }
+
+    int getID() const
+    {
+        return id;
+    }
+
+    string getCourse() const
+    {
+        return course;
+    }
+
+    string getSection() const
+    {
+        return section;
+    }
+};
+
+int main()
+{
+    Student myself("MD HOSSEN RANA", 42230200818, "Computer Science", "D");
+
+    cout << "Name: " << myself.getName() << endl;
+    cout << "ID: " << myself.getID() << endl;
+    cout << "Course: " << myself.getCourse() << endl;
+    cout << "Section: " << myself.getSection() << endl;
+
+    return 0;
+}
