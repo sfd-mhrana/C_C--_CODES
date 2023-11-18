@@ -1,0 +1,135 @@
+//Calculator Program Start//
+
+#include <iostream>
+using namespace std;
+
+class Calculator
+{
+private:
+    int a, b;
+    char c;
+
+public:
+    Calculator()
+    {
+        cout << "Calculator is ready!"<<endl;
+    }
+    double calculate(double a, double b, char c)
+    {
+        this->a = a;
+        this->b = b;
+        this->c = c;
+        if (c == '+')
+        {
+            return a + b;
+        }
+        else if (c == '-')
+        {
+            return a - b;
+        }
+        else if (c == '*')
+        {
+            return a * b;
+        }
+        else if (c == '/')
+        {
+            return a / b;
+        }
+    }
+    void showCalculation()
+    {
+        cout << a<<" " << c<<" " << b<<" " <<" = "<< this->calculate(a, b, c)<<endl;
+    }
+};
+
+int main()
+{
+    Calculator c1;
+    cout << "=================="<<endl;
+    double val = c1.calculate(10, 20, '+');
+    cout << "Returned value: " << val<<endl;
+    c1.showCalculation();
+    cout << "=================="<<endl;
+    val = c1.calculate(val, 10, '-');
+    cout << "Returned value: " << val<<endl;
+    c1.showCalculation();
+    cout << "=================="<<endl;
+    val = c1.calculate(val, 5, '*');
+    cout << "Returned value: " << val<<endl;
+    c1.showCalculation();
+    cout << "=================="<<endl;
+    val = c1.calculate(val, 16, '/');
+    cout << "Returned value: " << val<<endl;
+    c1.showCalculation();
+};
+
+
+//Calculator Program End//
+
+//Shape Program Start//
+
+#include <iostream>
+using namespace std;
+
+class Shape
+{
+private:
+    int a, b;
+    string c;
+
+public:
+    Shape(string c,int a,int b)
+    {
+        this->a=a;
+        this->b=b;
+        this->c=c;
+    }
+    double area()
+    {
+
+        if (this->c== "Triangle")
+        {
+            cout<<"Area:"<<(this->a*this->b)/2<<endl;
+        }
+        else if (this->c == "Square")
+        {
+            cout<<"Area:"<<this->a*this->b<<endl;
+        }
+        else if (this->c == "Rhombus")
+        {
+            cout<<"Area:"<<(this->a*this->b)/2<<endl;
+        }
+        else if (this->c == "Rectangle")
+        {
+            cout<<"Area:"<<this->a*this->b<<endl;
+        }
+        else
+        {
+            cout<<"Area: Shape unknown"<<endl;
+        }
+    }
+
+};
+
+int main()
+{
+
+    Shape triangle("Triangle",10,25);
+    triangle.area();
+    cout << "=================="<<endl;
+    Shape  square("Square",10,10);
+    square.area();
+    cout << "=================="<<endl;
+    Shape rhombus("Rhombus",18,25);
+    rhombus.area();
+    cout << "=================="<<endl;
+    Shape rectangle("Rectangle",15,30);
+    rectangle.area();
+    cout << "=================="<<endl;
+    Shape trapezium("Trapezium",15,30);
+    trapezium.area();
+    return 0;
+};
+
+
+//Shape Program End//
