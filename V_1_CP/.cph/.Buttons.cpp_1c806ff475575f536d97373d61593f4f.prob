@@ -1,0 +1,1 @@
+{"name":"Local: Buttons","url":"/home/mh-rana/Music/Phitorn/V_1_CP/Buttons.cpp","tests":[{"id":1700324530384,"input":"5 3","output":"9"},{"id":1700324542161,"input":"3 4","output":"7"},{"id":1700324551961,"input":"6 6","output":"12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mh-rana/Music/Phitorn/V_1_CP/Buttons.cpp","group":"local","local":true}

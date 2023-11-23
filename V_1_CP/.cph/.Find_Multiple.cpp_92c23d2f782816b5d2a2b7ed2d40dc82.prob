@@ -1,0 +1,1 @@
+{"name":"Local: Find_Multiple","url":"/home/mh-rana/Music/Phitorn/V_1_CP/Find_Multiple.cpp","tests":[{"id":1700321018313,"input":"123 456 100","output":"200"},{"id":1700321029401,"input":"630 940 314","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mh-rana/Music/Phitorn/V_1_CP/Find_Multiple.cpp","group":"local","local":true}

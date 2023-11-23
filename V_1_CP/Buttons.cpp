@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+
+void print(int a, int b)
+{
+    if (a - b > 0)
+    {
+        cout << (a * 2) - 1;
+    }
+    else
+    {
+        cout << a+b;
+    }
+}
+
+int main()
+{
+    int a, b;
+    cin >> a >> b;
+    if (a > b)
+    {
+        print(a, b);
+    }
+    else
+    {
+        print(b, a);
+    }
+    return 0;
+};
