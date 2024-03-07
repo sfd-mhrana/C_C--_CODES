@@ -1,0 +1,1 @@
+{"name":"Local: Water","url":"/home/mh-rana/Music/DSA/MY_DSA_CP_TEST/Algorithm_Final_Exam/Water.cpp","tests":[{"id":1709657553346,"input":"2\n9\n1 8 3 4 0 7 6 5 2\n5\n5 2 1 6 3","output":"1 5\n0 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mh-rana/Music/DSA/MY_DSA_CP_TEST/Algorithm_Final_Exam/Water.cpp","group":"local","local":true}
